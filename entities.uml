@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>tn.pi.studentmanagement.entities</OriginalElement>
+  <nodes>
+    <node x="-422.7956986706056" y="709.0125435745937">tn.pi.studentmanagement.entities.Tag</node>
+    <node x="-1713.9765672082717" y="666.0856070901034">tn.pi.studentmanagement.entities.Bac</node>
+    <node x="-1353.0796809453473" y="96.59649630723781">tn.pi.studentmanagement.entities.User</node>
+    <node x="-873.6768685376662" y="133.92872673559825">tn.pi.studentmanagement.entities.Teacher</node>
+    <node x="-767.7400059084196" y="819.7018197932055">tn.pi.studentmanagement.entities.Formation</node>
+    <node x="-1721.4765672082717" y="361.27667355982294">tn.pi.studentmanagement.entities.PostBac</node>
+    <node x="-878.6768685376662" y="445.1677695716396">tn.pi.studentmanagement.entities.Module</node>
+    <node x="-1364.8537370753324" y="390.5">tn.pi.studentmanagement.entities.Student</node>
+    <node x="-1742.9765672082717" y="855.7018197932055">tn.pi.studentmanagement.entities.EmergencyContact</node>
+    <node x="-1051.4700856720829" y="1106.3596632200884">tn.pi.studentmanagement.entities.ClassStudent</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="tn.pi.studentmanagement.entities.ClassStudent" target="tn.pi.studentmanagement.entities.Formation" relationship="TO_ONE">
+      <point x="105.0" y="0.0" />
+      <point x="-664.2400059084196" y="1197.8596632200884" />
+      <point x="0.0" y="103.5" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Formation" target="tn.pi.studentmanagement.entities.Tag" relationship="TO_MANY">
+      <point x="51.75" y="103.5" />
+      <point x="-612.4900059084196" y="1338.0" />
+      <point x="-244.2956986706056" y="1338.0" />
+      <point x="59.5" y="-55.5" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Tag" target="tn.pi.studentmanagement.entities.Formation" relationship="TO_MANY">
+      <point x="-59.5" y="-55.5" />
+      <point x="-363.2956986706056" y="1078.0" />
+      <point x="-499.0" y="1078.0" />
+      <point x="-499.0" y="1018.0" />
+      <point x="-715.9900059084196" y="1018.0" />
+      <point x="-51.75" y="103.5" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Student" target="tn.pi.studentmanagement.entities.Bac" relationship="TO_ONE">
+      <point x="-144.5" y="59.585607090103395" />
+      <point x="76.0" y="0.0" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Student" target="tn.pi.studentmanagement.entities.PostBac" relationship="TO_MANY">
+      <point x="-144.5" y="-221.22332644017706" />
+      <point x="83.5" y="0.0" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.ClassStudent" target="tn.pi.studentmanagement.entities.Student" relationship="TO_MANY">
+      <point x="-105.0" y="0.0" />
+      <point x="-1220.3537370753324" y="1197.8596632200884" />
+      <point x="0.0" y="295.5" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Student" target="tn.pi.studentmanagement.entities.ClassStudent" relationship="TO_MANY">
+      <point x="144.5" y="0.0" />
+      <point x="-946.4700856720829" y="686.0" />
+      <point x="0.0" y="-91.5" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.PostBac" target="tn.pi.studentmanagement.entities.Student" relationship="TO_ONE">
+      <point x="83.5" y="15.0" />
+      <point x="-144.5" y="-206.22332644017706" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Formation" target="tn.pi.studentmanagement.entities.Module" relationship="TO_MANY">
+      <point x="41.06300590841954" y="-103.49981979320546" />
+      <point x="-623.177" y="572.668" />
+      <point x="118.9998685376662" y="2.304283603962176E-4" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Module" target="tn.pi.studentmanagement.entities.Formation" relationship="TO_MANY">
+      <point x="95.43686262924666" y="127.5" />
+      <point x="0.0" y="-103.5" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Module" target="tn.pi.studentmanagement.entities.Teacher" relationship="TO_MANY">
+      <point x="0.0" y="-127.5" />
+      <point x="0.0" y="55.5" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Student" target="tn.pi.studentmanagement.entities.EmergencyContact" relationship="TO_ONE">
+      <point x="-144.5" y="237.20181979320546" />
+      <point x="105.0" y="0.0" />
+    </edge>
+    <edge source="tn.pi.studentmanagement.entities.Teacher" target="tn.pi.studentmanagement.entities.Module" relationship="TO_MANY">
+      <point x="113.9998685376662" y="2.7326440175556854E-4" />
+      <point x="-585.0" y="189.429" />
+      <point x="-585.0" y="572.668" />
+      <point x="118.9998685376662" y="2.304283603962176E-4" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Compact" zoom="0.5769047229493892" showDependencies="true" x="-553.8265760709012" y="682.752" />
+  <SelectedNodes>
+    <node>tn.pi.studentmanagement.entities.Module</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
